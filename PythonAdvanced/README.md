@@ -1,6 +1,6 @@
-# **Python Fundamentals**
+# **Python Advanced**
 > **Course date:** January 2024  
-> **ongoing** 
+> **Finished**: [certificate](https://softuni.bg/certificates/details/203789/fb8ae2e1) 
 
 
 ### Contents:
