@@ -1,0 +1,30 @@
+div{
+    display: inline-block;
+    scale: 1.4;
+    margin: 2em;
+}
+
+p{
+    font-size: 2em;
+    font-weight: 2;
+}
+
+.green_block{
+    background-color: green;
+}
+
+.orange_block{
+    background-color: orange;
+}
+
+.blue_block{
+    background-color: blue;
+}
+
+.red_block{
+    background-color: red;
+}
+
+.purple_block{
+    background-color: purple;
+}
