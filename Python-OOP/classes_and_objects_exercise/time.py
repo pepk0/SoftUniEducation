@@ -13,7 +13,7 @@ class Time:
         self.minutes = minutes
         self.seconds = seconds
 
-    def get_time(self) -> int:
+    def get_time(self) -> str:
         return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
 
     def next_second(self) -> str:
