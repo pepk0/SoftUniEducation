@@ -20,8 +20,6 @@ class Library:
             return (f"{book_name} successfully rented for the "
                     f"next {days_to_return} days!")
 
-        days_left = days_to_return
-
         for _, info in self.rented_books.items():
             if book_name in info:
                 days_left = info[book_name]
