@@ -27,7 +27,6 @@ class Vet:
         return (f"{self.name} has {len(self.animals)} animals. "
                 f"{space_left} space left in clinic")
 
-
 # peter = Vet("Peter")
 # george = Vet("George")
 # print(peter.register_animal("Tom"))
