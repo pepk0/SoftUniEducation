@@ -8,7 +8,6 @@ class ExercisePlan(NextId):
         self.equipment_id = equipment_id
         self.duration = duration
         self.id = self.set_next_id()
-        self.get_next_id()
 
     @classmethod
     def from_hours(cls, trainer_id: int, equipment_id: int, hours: int):

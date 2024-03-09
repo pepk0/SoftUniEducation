@@ -9,7 +9,6 @@ class Subscription(NextId):
         self.trainer_id = trainer_id
         self.exercise_id = exercise_id
         self.id = self.set_next_id()
-        self.get_next_id()
 
     def __repr__(self) -> str:
         return f"Subscription <{self.id}> on {self.date}"
