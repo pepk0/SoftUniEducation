@@ -26,7 +26,7 @@ class Group:
         people = ", ".join(str(person) for person in self.people)
         return f"Group {self.name} with members {people}"
 
-    def __iter__(self):
+    def __iter__(self) -> str:
         for index, individual in enumerate(self.people):
             yield f"Person {index}: {individual}"
 
