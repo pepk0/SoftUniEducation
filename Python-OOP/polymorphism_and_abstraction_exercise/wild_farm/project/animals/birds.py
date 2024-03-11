@@ -4,6 +4,7 @@ from project.food import Meat, Food
 
 class Owl(Bird):
     weight_per_food = 0.25
+    food_animal_eats = (Meat,)
 
     def __init__(self, name: str, weight: float, wing_size: float,
                  food_eaten: int = 0) -> None:
@@ -14,7 +15,7 @@ class Owl(Bird):
         return "Hoot Hoot"
 
     def feed(self, food: Meat) -> str or None:
-        if not isinstance(food, Meat):
+        if not isinstance(food, self.food_animal_eats):
             return (f"{self.__class__.__name__} does "
                     f"not eat {food.__class__.__name__}!")
 
