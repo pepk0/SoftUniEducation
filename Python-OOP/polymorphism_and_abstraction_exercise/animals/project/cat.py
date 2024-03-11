@@ -5,5 +5,6 @@ class Cat(Animal):
     def __init__(self, name: str, age: int, gender: str) -> None:
         super().__init__(name, age, gender)
 
-    def make_sound(self) -> str:
+    @staticmethod
+    def make_sound() -> str:
         return "Meow meow!"

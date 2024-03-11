@@ -8,8 +8,9 @@ class Animal(ABC):
         self.age = age
         self.gender = gender
 
+    @staticmethod
     @abstractmethod
-    def make_sound(self) -> str:
+    def make_sound() -> str:
         pass
 
     def __repr__(self) -> str:
