@@ -26,9 +26,10 @@ class Group:
         people = ", ".join(str(person) for person in self.people)
         return f"Group {self.name} with members {people}"
 
-    def __iter__(self) -> str:
-        for index, individual in enumerate(self.people):
-            yield f"Person {index}: {individual}"
+    # THIS IS REDUNDANT IF WE HAVE A GETITEM METHOD OVERWRITTEN
+    # def __iter__(self) -> str:
+    #     for index, individual in enumerate(self.people):
+    #         yield f"Person {index}: {individual}"
 
     def __getitem__(self, index) -> str:
         return f"Person {index}: {self.people[index]}"
