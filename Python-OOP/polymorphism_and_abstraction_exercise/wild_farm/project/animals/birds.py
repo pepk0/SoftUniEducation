@@ -9,7 +9,8 @@ class Owl(Bird):
                  food_eaten: int = 0) -> None:
         super().__init__(name, weight, wing_size, food_eaten)
 
-    def make_sound(self) -> str:
+    @staticmethod
+    def make_sound() -> str:
         return "Hoot Hoot"
 
     def feed(self, food: Meat) -> str or None:
@@ -28,7 +29,8 @@ class Hen(Bird):
                  food_eaten: int = 0) -> None:
         super().__init__(name, weight, wing_size, food_eaten)
 
-    def make_sound(self) -> str:
+    @staticmethod
+    def make_sound() -> str:
         return "Cluck"
 
     def feed(self, food: Food) -> str or None:
