@@ -29,9 +29,10 @@ class Account:
     def __len__(self) -> int:
         return len(self._transactions)
 
-    def __iter__(self) -> int:
-        for transaction in self._transactions:
-            yield transaction
+    # THIS IS REDUNDANT IF WE HAVE A GETITEM OVERWRITTEN
+    # def __iter__(self) -> int:
+    #     for transaction in self._transactions:
+    #         yield transaction
 
     def __reversed__(self) -> list:
         return self._transactions[::-1]
