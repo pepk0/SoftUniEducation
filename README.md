@@ -1,12 +1,12 @@
 # SoftUniEducation
 
 This repository holds all the SofUni courses in the Python software engineering
-path
+path.
 
 ## Contents:
 
-You can check the homework by clicking the link on the Course Name column, you
-can check the certificate and grade by clicking the links in the Grade columns.
+You can check out all the problems solved by clicking the link on the Course Name column, also
+check out the certificate and grade in the Grade columns.
 
 | **Course Name**                                                                                    | **Date Started** | **Grade**                                                              |
 |----------------------------------------------------------------------------------------------------|------------------|------------------------------------------------------------------------|
@@ -17,5 +17,4 @@ can check the certificate and grade by clicking the links in the Grade columns.
 | [Python-OOP](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP)                       | 20/02/2024       | *ongoing*                                                              |                                                               |                                                                     |
 
 ----
-*NOTE* - Not all the solutions to the homework assignments are the best and the
-most optimal ones
+*NOTE* - Earlier course homework may be writen poorly and may not be the most efficient way of solving the problem in question.
