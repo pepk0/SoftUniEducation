@@ -1,4 +1,4 @@
-def fibonacci():
+def fibonacci() -> int:
     first_num, second_num = 0, 1
     while True:
         curr = first_num
