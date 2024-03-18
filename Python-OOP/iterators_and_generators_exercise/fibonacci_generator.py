@@ -1,6 +1,5 @@
-def fibonacci() -> int:
+def fibonacci():
     first_num, second_num = 0, 1
     while True:
-        curr = first_num
+        yield first_num
         first_num, second_num = second_num, first_num + second_num
-        yield curr
