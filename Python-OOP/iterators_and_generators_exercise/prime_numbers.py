@@ -7,7 +7,7 @@ def is_prime(number: int) -> bool:
     return True
 
 
-def get_primes(integer_list: list) -> int:
+def get_primes(integer_list: list):
     for integer in integer_list:
         if is_prime(integer):
             yield integer
