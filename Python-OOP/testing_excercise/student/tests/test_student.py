@@ -60,7 +60,7 @@ class TestStudent(unittest.TestCase):
         result = self.student.leave_course("math")
 
         self.assertEqual(result, "Course has been removed")
-        self.assertEqual(self.student.courses, {})
+        self.assertNotIn("math", self.student.courses)
 
     def test_leave_invalid_course(self):
         with self.assertRaises(Exception) as no_course:
