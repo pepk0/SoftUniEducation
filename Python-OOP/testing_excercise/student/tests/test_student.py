@@ -4,9 +4,7 @@ import unittest
 
 class TestStudent(unittest.TestCase):
     def setUp(self):
-        self.student = Student(
-            "test_name"
-        )
+        self.student = Student("test_name")
 
     def test_init_with_no_courses(self):
         self.assertEqual(self.student.name, "test_name")
