@@ -4,19 +4,8 @@ from project.hero import Hero
 
 class TestHero(unittest.TestCase):
     def setUp(self):
-        self.hero_one = Hero(
-            "hero_one",
-            10,
-            15.5,
-            6.5
-        )
-
-        self.hero_two = Hero(
-            "hero_two",
-            6,
-            20.5,
-            5.5
-        )
+        self.hero_one = Hero("hero_one", 10, 15.5, 6.5)
+        self.hero_two = Hero("hero_two", 6, 20.5, 5.5)ч
 
     def test_correct_init(self):
         self.assertEqual(self.hero_one.username, "hero_one")
