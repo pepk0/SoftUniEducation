@@ -4,10 +4,7 @@ from project.vehicle import Vehicle
 
 class TestVehicle(unittest.TestCase):
     def setUp(self):
-        self.vehicle = Vehicle(
-            100.5,
-            150.3,
-        )
+        self.vehicle = Vehicle(100.5, 150.3)
 
     def test_innit_method(self):
         self.assertEqual(self.vehicle.fuel, 100.5)
