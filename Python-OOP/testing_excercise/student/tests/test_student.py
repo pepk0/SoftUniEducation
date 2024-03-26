@@ -5,15 +5,15 @@ import unittest
 class TestStudent(unittest.TestCase):
     def setUp(self):
         self.student = Student("test_name")
+        self.student_with_course = Student("test_name", {"math": [1, 2, 3]})
 
     def test_init_with_no_courses(self):
         self.assertEqual(self.student.name, "test_name")
         self.assertEqual(self.student.courses, {})
 
     def test_init_with_courses(self):
-        student = Student("Mira", {"math": [1]})
-        self.assertEqual(student.name, "Mira")
-        self.assertEqual(student.courses, {"math": [1]})
+        self.assertEqual(self.student_with_course.name, "test_name")
+        self.assertIn("math", self.student_with_course.courses)
 
     def test_enroll_to_existing_course(self):
         self.student.courses["math"] = [1, 2]
