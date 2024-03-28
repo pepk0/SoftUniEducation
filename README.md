@@ -17,4 +17,4 @@ check out the certificate and grade in the Grade columns.
 | [Python-OOP](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP)                       | 20/02/2024       | *ongoing*                                                              |                                                               |                                                                     |
 
 ----
-*NOTE* - Earlier course homework may be writen poorly and may not be the most efficient way of solving the problem in question.
+*NOTE* - Earlier homework may be written poorly and may not be the most efficient way of solving the problem in question.
