@@ -29,7 +29,7 @@ class Storage:
     def edit_topic(self, topic_id: int, new_topic: str,
                    new_storage_folder: str) -> None:
         if topic_id in self.topics:
-            topic = self.topics[self.topics.index(topic_id)]
+            topic: Topic = self.topics[self.topics.index(topic_id)]
             topic.topic = new_topic
             topic.storage_folder = new_storage_folder
 
