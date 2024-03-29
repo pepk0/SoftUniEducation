@@ -50,7 +50,7 @@ class Storage:
         if document_id in self.documents:
             self.documents.remove(document_id)
 
-    def get_document(self, document_id: int) -> Document or None:
+    def get_document(self, document_id: int) -> Document | None:
         if document_id in self.documents:
             return self.documents[self.documents.index(document_id)]
 
