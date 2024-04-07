@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 
 from project.campaigns.base_campaign import BaseCampaign
 from project.campaigns.high_budget_campaign import HighBudgetCampaign
@@ -14,53 +14,52 @@ class InfluencerManagerApp:
     VALID_CAMPAIGN_TYPES = {"HighBudgetCampaign": HighBudgetCampaign,
                             "LowBudgetCampaign": LowBudgetCampaign}
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.influencers: List[BaseInfluencer] = []
         self.campaigns: List[BaseCampaign] = []
 
-    def find_influencer_by_username(self, username: str):
+    def find_influencer_by_username(self,
+                                    username: str) -> BaseInfluencer | None:
         try:
             return [i for i in self.influencers if i.username == username][0]
         except IndexError:
             return None
 
-    def find_campaign_by_id(self, id_: int):
+    def find_campaign_by_id(self, id_: int) -> BaseCampaign | None:
         try:
             return [c for c in self.campaigns if c.campaign_id == id_][0]
         except IndexError:
             return None
 
     def register_influencer(self, influencer_type: str, username: str,
-                            followers: int, engagement_rate: float):
+                            followers: int, engagement_rate: float) -> str:
         if influencer_type not in self.VALID_INFLUENCER_TYPES:
             return f"{influencer_type} is not an allowed influencer type."
 
         if self.find_influencer_by_username(username):
             return f"{username} is already registered."
 
-        new_influencer = self.VALID_INFLUENCER_TYPES[influencer_type](username,
-                                                                      followers,
-                                                                      engagement_rate)
+        new_influencer = self.VALID_INFLUENCER_TYPES[influencer_type]
+        new_influencer(username, followers, engagement_rate)
         self.influencers.append(new_influencer)
         return f"{username} is successfully registered as a {influencer_type}."
 
     def create_campaign(self, campaign_type: str, campaign_id: int, brand: str,
-                        required_engagement: float):
+                        required_engagement: float) -> str:
         if campaign_type not in self.VALID_CAMPAIGN_TYPES:
             return f"{campaign_type} is not a valid campaign type."
 
         if self.find_campaign_by_id(campaign_id):
             return f"Campaign ID {campaign_id} has already been created."
 
-        new_campaign = self.VALID_CAMPAIGN_TYPES[campaign_type](campaign_id,
-                                                                brand,
-                                                                required_engagement)
+        new_campaign = self.VALID_CAMPAIGN_TYPES[campaign_type]
+        new_campaign((campaign_id, brand, required_engagement))
         self.campaigns.append(new_campaign)
         return (f"Campaign ID {campaign_id} for {brand} is "
                 f"successfully created as a {campaign_type}.")
 
     def participate_in_campaign(self, influencer_username: str,
-                                campaign_id: int):
+                                campaign_id: int) -> str | None:
         influencer = self.find_influencer_by_username(influencer_username)
         campaign = self.find_campaign_by_id(campaign_id)
 
@@ -83,7 +82,7 @@ class InfluencerManagerApp:
             return (f"Influencer '{influencer_username}' has successfully "
                     f"participated in the campaign with ID {campaign_id}.")
 
-    def calculate_total_reached_followers(self):
+    def calculate_total_reached_followers(self) -> Dict[BaseCampaign, int]:
         result = {}
         for campaign in self.campaigns:
             total_followers_reached = 0
@@ -96,7 +95,7 @@ class InfluencerManagerApp:
             result[campaign] = total_followers_reached
         return result
 
-    def influencer_campaign_report(self, username: str):
+    def influencer_campaign_report(self, username: str) -> str:
         influencer = self.find_influencer_by_username(username)
 
         if not influencer.campaigns_participated:
@@ -104,7 +103,7 @@ class InfluencerManagerApp:
 
         return influencer.display_campaigns_participated()
 
-    def campaign_statistics(self):
+    def campaign_statistics(self) -> str:
         total_followers = self.calculate_total_reached_followers()
         sorted_campaigns = sorted(self.campaigns, key=lambda x:
         (len(x.approved_influencers), -x.budget))
