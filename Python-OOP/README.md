@@ -8,11 +8,13 @@
 This is the homework for this course, down below you can navigate to specific problems.  
 
 
-<!-- [➡️ **First Steps in OOP**](https://github.com/pepk0/python_advanced/tree/main/lists_as_stacks_and_queues)  
-[➡️ **Tuples and Sets**](https://github.com/pepk0/python_advanced/tree/main/tuples_and_sets)  
-[➡️ **Stacks Queues Tuples and Sets**](https://github.com/pepk0/python_advanced/tree/main/stacks_queues_tuples_and_sets)  
-[➡️ **Multidimensional Lists**](https://github.com/pepk0/python_advanced/tree/main/multidimensional_lists)  
-[➡️ **Functions Advanced**](https://github.com/pepk0/python_advanced/tree/main/functions_advanced)  
-[➡️ **Error Handling**](https://github.com/pepk0/PythonAdvanced/tree/main/error_handling)  
-[➡️ **File Handling**](https://github.com/pepk0/PythonAdvanced/tree/main/file_handling)  
- -->
+[➡️ **First Steps in OOP**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/first_steps_in_to_oop)  
+[➡️ **Classes and Objects**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/classes_and_objects)  
+[➡️ **Inheritance**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/inheritance)  
+[➡️ **Encapsulation**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/encapsulation)  
+[➡️ **Static and Class Methods**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/static_and_class_methods)  
+[➡️ **Polymorphism and Abstraction**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/polymorphism_and_abstraction)  
+[➡️ **Iterators and Generators**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/iterators_and_generators)  
+[➡️ **Decorators**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/decorators)  
+[➡️ **Testing**](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP/testing)  
+
