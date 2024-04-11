@@ -6,7 +6,7 @@ path.
 ## Contents:
 
 You can check out all the problems solved by clicking the link on the Course
-Name column, you can check the grade and certificate on the Grade column and you
+Name column, you can check the grade and certificate on the Grade column, and you
 can see the Table of content of a course from the Course Curriculum column
 
 | **Course Name**                                                                                    | **Date Started** | **Grade**                                                              | **Course Curriculum**                                                                     | 
