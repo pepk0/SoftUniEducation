@@ -6,7 +6,8 @@ path.
 ## Contents:
 
 You can check out all the problems solved by clicking the link on the Course
-Name column, you can check the grade and certificate on the Grade column, and you
+Name column, you can check the grade and certificate on the Grade column, and
+you
 can see the Table of content of a course from the Course Curriculum column
 
 | **Course Name**                                                                                    | **Date Started** | **Grade**                                                              | **Course Curriculum**                                                                     | 
@@ -17,6 +18,3 @@ can see the Table of content of a course from the Course Curriculum column
 | [Python Advanced](https://github.com/pepk0/SoftUniEducation/tree/main/PythonAdvanced)              | 09/01/2024       | [certificate](https://softuni.bg/certificates/details/203789/fb8ae2e1) | [TOC](https://github.com/pepk0/SoftUniEducation/blob/main/PythonAdvanced/README.md)       |    
 | [Python-OOP](https://github.com/pepk0/SoftUniEducation/tree/main/Python-OOP)                       | 20/02/2024       | [certificate](https://softuni.bg/certificates/details/211571/d2c25766) | [TOC](https://github.com/pepk0/SoftUniEducation/blob/main/Python-OOP/README.md)           |                                                                     |
 
-----
-*NOTE* - Earlier homework may be written poorly and may not be the most
-efficient way of solving the problem in question.
