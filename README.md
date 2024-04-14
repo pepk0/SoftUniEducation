@@ -1,7 +1,7 @@
 # SoftUniEducation
 
-This repository holds all the SofUni courses in the Python software engineering
-path.
+In this repository, all the homework and projects for the SofUni courses in the
+Python software engineering path are going to be stored.
 
 ## Contents:
 
