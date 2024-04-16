@@ -3,14 +3,14 @@
 In this repository, all the homework and projects for the SofUni courses in the
 Python software engineering path are going to be stored.
 
-## Contents:
+## Content:
 
 You can check out all the problems solved by clicking the link on the Course
 Name column, you can check the grade and certificate on the Grade column, and
 you
 can see the Table of Content of a course from the Course Curriculum column.
 
-| **Course Name**                                                                                    | **Date Started** | **Grade**                                                              | **Course Curriculum**                                                                     | 
+| **Name**                                                                                           | **Date Started** | **Grade**                                                              | **Contents**                                                                              | 
 |----------------------------------------------------------------------------------------------------|------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [Python Basics](https://github.com/pepk0/SoftUniEducation/tree/main/PythonBasics)                  | 22/04/2023       | [certificate](https://softuni.bg/certificates/details/172817/5aec6dfb) | [TOC](https://github.com/pepk0/SoftUniEducation/blob/main/PythonBasics/README.md)         |       
 | [Algorithms with Python](https://github.com/pepk0/SoftUniEducation/tree/main/AlgorithmsWithPython) | 03/07/2023       | [certificate](https://softuni.bg/certificates/details/181215/e51ab860) | [TOC](https://github.com/pepk0/SoftUniEducation/blob/main/AlgorithmsWithPython/README.md) |
