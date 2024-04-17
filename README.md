@@ -8,7 +8,7 @@ Python software engineering path are going to be stored.
 You can check out all the problems solved by clicking the link on the Course
 Name column, you can check the grade and certificate on the Grade column, and
 you
-can see the Table of Content of a course from the Course Curriculum column.
+can see the Table of Content for a course from the Course Curriculum column.
 
 | **Name**                                                                                           | **Date Started** | **Grade**                                                              | **Contents**                                                                              | 
 |----------------------------------------------------------------------------------------------------|------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
