@@ -7,6 +7,9 @@
 
 ## Course curriculum:
 
+This is the homework for this course.
+You can navigate, using the links down below
+
 | **Subject**                                                                                                                                 | **Hours** |
 |---------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | [Recursion](https://github.com/pepk0/algorithms_with_python/tree/main/algorithms_with_python/recursion)                                     | 3         |
